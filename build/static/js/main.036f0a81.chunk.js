@@ -1,2 +1,0 @@
-(this.webpackJsonpphotowall=this.webpackJsonpphotowall||[]).push([[0],[,,,function(e,t,n){e.exports=n(4)},function(e,t,n){"use strict";n.r(t);var o=n(0),a=n.n(o),l=n(2),r=n.n(l),h=a.a.createElement("ol",null,["Take out the trash","Shovel the driveway","Walk the dog"].map((function(e,t){return a.a.createElement("li",{key:t},e)})));r.a.render(h,document.getElementById("root"))}],[[3,1,2]]]);
-//# sourceMappingURL=main.036f0a81.chunk.js.map
