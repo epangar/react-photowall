@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
 //React
 
-const tasks = ['Take out the trash', 'Shovel the driveway', 'Walk the dog'];
+/* const tasks = ['Take out the trash', 'Shovel the driveway', 'Walk the dog'];
 
 const taskList = React.createElement('ol', null,
 tasks.map((task, index)=> React.createElement('li', {key: index}, task))
@@ -12,20 +12,45 @@ const element = React.createElement('div', null, taskList)
 
 
 
-//ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(element, document.getElementById('root')); */
 
 //JSX
 
-const names = ["Alexander", "Bernard", "Charles"]
 
-const JSXelement = <div>
+/* const JSXelement = <div>
                       <h1> JSX Name list</h1>
-                      <ul> 
+                      <ol> 
 
                       {names.map((name, position) => <li key = {position}> {name} </li>)}
                       
-                      </ul>
-                    </div>
+                      </ol>
+                    </div> */
 
-const myArray= [element, JSXelement]
-ReactDOM.render(myArray, document.getElementById('root'));
+
+
+class Title extends Component {
+  render(){
+    return  <h1> {this.props.people}</h1>;
+  }
+}
+
+class List extends Component {
+  render(){
+    return  <ol> 
+
+              {this.props.names.map((name, position) => <li key = {position}> {name} </li>)}
+            
+            </ol>;
+  }
+}
+
+class Main extends Component {
+  render(){
+    return  <div>
+              <Title people ="People"/>
+              <List names={["Batman", "Robin"]}/>
+              <List names={["Aldon", "Megan"]}/>
+            </div>
+  }
+}
+ReactDOM.render(<Main/>, document.getElementById('root'));
