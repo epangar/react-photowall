@@ -1,5 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import Main from './Components/Main';
+
+ReactDOM.render(<Main/>, document.getElementById('root'));
+
+
 
 //React
 
@@ -28,29 +33,3 @@ ReactDOM.render(element, document.getElementById('root')); */
 
 
 
-class Title extends Component {
-  render(){
-    return  <h1> {this.props.people}</h1>;
-  }
-}
-
-class List extends Component {
-  render(){
-    return  <ol> 
-
-              {this.props.names.map((name, position) => <li key = {position}> {name} </li>)}
-            
-            </ol>;
-  }
-}
-
-class Main extends Component {
-  render(){
-    return  <div>
-              <Title people ="People"/>
-              <List names={["Batman", "Robin"]}/>
-              <List names={["Aldon", "Megan"]}/>
-            </div>
-  }
-}
-ReactDOM.render(<Main/>, document.getElementById('root'));
