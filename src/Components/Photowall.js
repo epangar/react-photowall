@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Photo from './Photo.js'
+import Photo from './Photo.js';
+import '../styles/styles.css';
 
 export class PhotoWall extends Component {
   render(){
