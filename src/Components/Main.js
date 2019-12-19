@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Title from './Title'
 import PhotoWall from './Photowall'
-
+import '../styles/styles.css' 
 
 const posts = [{
     id: "0",

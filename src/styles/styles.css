@@ -33,7 +33,7 @@ html {
  body {
   background: offwhite;
 }
-.photoGrid {
+.photo-grid {
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;

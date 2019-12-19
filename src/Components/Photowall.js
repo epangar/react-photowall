@@ -3,7 +3,7 @@ import Photo from './Photo.js'
 
 export class PhotoWall extends Component {
   render(){
-    return  <div className="photoGrid">
+    return  <div className="photo-grid">
               
                 {this.props.posts.map((post, index) => <Photo alt="" key={index} post={post}/>)}
               
